@@ -197,6 +197,9 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
+    android.hardware.audio@2.0-service \
     audio.r_submix.default \
     audio.usb.default \
     audio_policy.stub \
@@ -215,10 +218,15 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
     power.mt6735
 
 # liblights
 PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
+    android.hardware.light@2.0-service \
+    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-service \
     lights.mt6735
 
 # sensors
@@ -227,10 +235,12 @@ PRODUCT_PACKAGES += \
 
 # memtrack
 PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
     memtrack.mt6735
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
     gps.mt6735 \
     libepos \
     mnld \
@@ -239,6 +249,8 @@ PRODUCT_PACKAGES += \
 
 # BT MTK
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth@1.0-service \
     libbluetooth_mtk \
     libbt-vendor \
     libbluetooth_mtk_pure \
@@ -247,6 +259,7 @@ PRODUCT_PACKAGES += \
 
 # FM Radio
 PRODUCT_PACKAGES += \
+    android.hardware.broadcastradio@1.0-impl \
     radio.fm.mt6735 \
     FMRadio \
     libfmjni \
@@ -264,6 +277,10 @@ PRODUCT_PACKAGES += \
 
 # GUI UI MTK props
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.mapper@2.0-impl \
     libgui_ext \
     libui_ext \
     libion_mtk \
@@ -278,6 +295,10 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl \
+    android.hardware.camera.provider@2.4-impl \
+    android.hardware.camera.provider@2.4-service \
     Snap
 
 # Browser
@@ -289,4 +310,15 @@ PRODUCT_PACKAGES += \
     libmrdump \
     mrdump_tool
 
-	
+# Health HAL
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-impl \
+    android.hardware.health@1.0-service
+
+# Keymaster HAL
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
+
+# USB HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
