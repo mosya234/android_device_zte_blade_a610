@@ -1,0 +1,4 @@
+add_lunch_combo lineage_a610-eng
+add_lunch_combo lineage_a610-userdebug
+add_lunch_combo lineage_a610-user
+
